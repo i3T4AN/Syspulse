@@ -1,0 +1,23 @@
+[database]
+path = data/syspulse.db
+
+[collection]
+interval = 60
+ping_host = 8.8.8.8
+ping_port = 53
+
+[notifications]
+enabled = false
+type = email
+
+smtp_host = smtp.gmail.com
+smtp_port = 587
+smtp_user = your_email@gmail.com
+smtp_password = your_app_password
+from_email = syspulse@localhost
+to_email = recipient@example.com
+
+webhook_url = https://hooks.example.com/syspulse
+
+[maintenance]
+retention_days = 30
